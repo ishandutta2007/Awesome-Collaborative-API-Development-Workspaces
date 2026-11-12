@@ -62,7 +62,7 @@ The sector is **moderately to highly fragmented** rather than a winner-take-all 
 
 *Open-source API development clients, self-hosted workspace platforms, and API developer portals for privacy, data sovereignty, and Git-native collaboration. Sorted in descending order by GitHub stargazer count.*
 
-| 📦 Repository | ⭐ Stars | 📝 Description |
+| 📦 Repository | ⭐ GitHub_Stars | 📝 Description |
 |:---|:---|:---|
 | **[Hoppscotch](https://github.com/hoppscotch/hoppscotch)** | [![Stars](https://img.shields.io/github/stars/hoppscotch/hoppscotch?style=social&color=white)](https://github.com/hoppscotch/hoppscotch/stargazers) | Modern, lightweight, open-source API development ecosystem and web client. Provides real-time team collaboration, environments, and REST/GraphQL/WebSocket testing. |
 | **[Bruno](https://github.com/usebruno/bruno)** | [![Stars](https://img.shields.io/github/stars/usebruno/bruno?style=social&color=white)](https://github.com/usebruno/bruno/stargazers) | Offline-first, fast, and Git-friendly API client. Stores API collections directly as plain text files (`.bru`) inside your codebase for seamless Git version control without cloud lock-in. |
