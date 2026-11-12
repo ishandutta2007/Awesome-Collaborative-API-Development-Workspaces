@@ -1,26 +1,38 @@
-# Awesome Collaborative API Development Workspaces [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Collaborative API Development Workspaces Banner" width="100%" />
+</p>
 
-> A curated list of top SaaS platforms and open-source GitHub projects for collaborative API development, shared workspaces, real-time API design, team debugging, and cloud development environments.
+# 🚀 Awesome Collaborative API Development Workspaces [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-[![Track Awesome List Updates](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Collaborative-API-Development-Workspaces)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Collaborative-API-Development-Workspaces/pulls)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+> 🌐 A curated directory of premier SaaS platforms and open-source GitHub projects for collaborative API development, shared workspaces, real-time API design, team debugging, and cloud development environments.
 
-This guide tracks notable **SaaS platforms** and **open-source repositories** empowering engineering teams to design, test, mock, document, and manage APIs together in shared workspaces. These solutions streamline workflows with real-time co-authoring, Git-backed synchronization, role-based access control (RBAC), and reproducible cloud development environments—eliminating the risk and friction of manual collection exports.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Collaborative-API-Development-Workspaces"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg" alt="Maintained" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Collaborative-API-Development-Workspaces/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+This repository tracks notable **SaaS platforms** and **open-source repositories** empowering modern engineering teams to design, test, mock, document, and manage APIs together in shared workspaces. These solutions streamline developer workflows with real-time multiplayer co-authoring, Git-backed synchronization, role-based access control (RBAC), and reproducible cloud development environments—eliminating the risk, drift, and friction of passing static collection exports manually.
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS / Hosted Platforms](#saas--hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS / Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🏗️ Architectural Recommendation: The Self-Hosted Collaborative Stack](#️-architectural-recommendation-the-self-hosted-collaborative-stack)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The global API management and collaborative API development market is estimated at **$8.8B – $13.5B in 2026**, growing at a rapid CAGR of ~16.5%–28% propelled by microservices expansion, cloud-native deployments, and the surge in LLM/AI gateway integrations.
 
@@ -28,11 +40,11 @@ The sector is **moderately to highly fragmented** rather than a winner-take-all 
 
 ---
 
-## SaaS / Hosted Platforms
+## ☁️ SaaS / Hosted Platforms
 
 *Below is a curated comparison of hosted collaborative API development and cloud workspace platforms, sorted in descending order by company scale (valuation or market cap).*
 
-| Product | Company Scale (Valuation / Revenue) | Description | Pricing (Starting Paid Tier) | Free Tier / Trial Limits |
+| 🏷️ Product | 🏢 Company Scale (Valuation / Revenue) | 📝 Description | 💳 Pricing (Starting Paid Tier) | 🎁 Free Tier / Trial Limits |
 |:---|:---|:---|:---|:---|
 | **[GitHub Codespaces](https://github.com/features/codespaces)** | **~$3.87T Market Cap** (Parent: Microsoft; FY2026 Revenue: ~$331.8B) | Cloud development environments with shared port forwarding, reproducible devcontainers (`devcontainer.json`), and browser/desktop VS Code integration for collaborative API testing. | Compute starts at **$0.18/core-hour** (2-core: $0.36/hr active); storage billed at **$0.07/GB/month** beyond included allowances. | **Free plan (personal)**: 120 core-hours/month compute (~60 hrs on 2-core) + 15 GB/month storage; 30-min idle timeout. (Organization accounts require pay-as-you-go). |
 | **[Replit Teams](https://replit.com/pricing)** | **$9.0B Valuation** (Annualized Revenue: ~$150M+) | Collaborative browser-based IDE and cloud development platform offering multi-user multiplayer editing, integrated hosting, and AI agent automation for full-stack API workflows. | **Core**: **$20/month** (or $204/year billed annually at $17/mo); **Pro**: $100/month for advanced multi-builder capacity. | **Starter (Free forever)**: Basic AI agent access with daily rate allowance, limited monthly cloud credits, and 1 published application. No time-limited trial on paid tiers. |
@@ -46,11 +58,11 @@ The sector is **moderately to highly fragmented** rather than a winner-take-all 
 
 ---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
 *Open-source API development clients, self-hosted workspace platforms, and API developer portals for privacy, data sovereignty, and Git-native collaboration. Sorted in descending order by GitHub stargazer count.*
 
-| Repository | Stars | Description |
+| 📦 Repository | ⭐ Stars | 📝 Description |
 |:---|:---|:---|
 | **[Hoppscotch](https://github.com/hoppscotch/hoppscotch)** | [![Stars](https://img.shields.io/github/stars/hoppscotch/hoppscotch?style=social&color=white)](https://github.com/hoppscotch/hoppscotch/stargazers) | Modern, lightweight, open-source API development ecosystem and web client. Provides real-time team collaboration, environments, and REST/GraphQL/WebSocket testing. |
 | **[Bruno](https://github.com/usebruno/bruno)** | [![Stars](https://img.shields.io/github/stars/usebruno/bruno?style=social&color=white)](https://github.com/usebruno/bruno/stargazers) | Offline-first, fast, and Git-friendly API client. Stores API collections directly as plain text files (`.bru`) inside your codebase for seamless Git version control without cloud lock-in. |
@@ -71,35 +83,54 @@ The sector is **moderately to highly fragmented** rather than a winner-take-all 
 
 ---
 
-## Architectural Recommendation: The Self-Hosted Collaborative Stack
+## 🏗️ Architectural Recommendation: The Self-Hosted Collaborative Stack
 
 For engineering teams seeking data sovereignty, enterprise zero-trust security, and zero per-seat SaaS costs:
 
-1. **API Testing & Execution**: [Bruno](https://github.com/usebruno/bruno) or [Hoppscotch](https://github.com/hoppscotch/hoppscotch) for Git-native and web-based collection collaboration.
-2. **Design & Contract Linting**: [Swagger Editor](https://github.com/swagger-api/swagger-editor) combined with [Spectral](https://github.com/stoplightio/spectral) for OpenAPI enforcement in CI/CD.
-3. **Dynamic Mocking**: [Prism](https://github.com/stoplightio/prism) or [WireMock](https://github.com/wiremock/wiremock) for decoupling frontend and consumer teams from unfinished backends.
-4. **Developer Portal & API Catalog**: [Backstage](https://github.com/backstage/backstage) or [Scalar](https://github.com/scalar/scalar) for interactive API documentation and discovery.
-5. **Reproducible Cloud Workspaces**: [DevPod](https://github.com/loft-sh/devpod) or [Coder](https://github.com/coder/coder) to eliminate environment drift across local and remote developer machines.
+1. 🧪 **API Testing & Execution**: [Bruno](https://github.com/usebruno/bruno) or [Hoppscotch](https://github.com/hoppscotch/hoppscotch) for Git-native and web-based collection collaboration.
+2. 📐 **Design & Contract Linting**: [Swagger Editor](https://github.com/swagger-api/swagger-editor) combined with [Spectral](https://github.com/stoplightio/spectral) for OpenAPI enforcement in CI/CD.
+3. 🎭 **Dynamic Mocking**: [Prism](https://github.com/stoplightio/prism) or [WireMock](https://github.com/wiremock/wiremock) for decoupling frontend and consumer teams from unfinished backends.
+4. 📖 **Developer Portal & API Catalog**: [Backstage](https://github.com/backstage/backstage) or [Scalar](https://github.com/scalar/scalar) for interactive API documentation and discovery.
+5. ☁️ **Reproducible Cloud Workspaces**: [DevPod](https://github.com/loft-sh/devpod) or [Coder](https://github.com/coder/coder) to eliminate environment drift across local and remote developer machines.
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
 Contributions are warmly welcomed! To suggest a new tool or update existing details:
 
-1. Fork this repository.
-2. Create a new branch: `git checkout -b feature/add-new-workspace`.
-3. Add the project to the relevant section (maintain table sorting and column requirements).
-4. Commit your changes: `git commit -m "Add <tool-name> to collaborative workspaces"`.
-5. Push to your branch and open a Pull Request.
+1. 🍴 Fork this repository.
+2. 🌿 Create a new branch: `git checkout -b feature/add-new-workspace`.
+3. ✍️ Add the project to the relevant section (maintain table sorting and column requirements).
+4. 💾 Commit your changes: `git commit -m "Add <tool-name> to collaborative workspaces"`.
+5. 🚀 Push to your branch and open a Pull Request.
 
 ---
 
-## Disclaimer
+## 💖 Support
 
-- This is a community-maintained list provided for informational purposes only.
-- Pricing, quotas, and feature tiers change frequently; always check vendor websites directly for the latest updates.
-- When evaluating collaborative API workspaces, audit data governance models (such as secret masking, end-to-end encryption, and role-based access control) to protect sensitive API keys and production credentials.
+Thank you so much for exploring and using this repository! If this curated list helps you or your team streamline collaborative API workflows, please consider:
+
+- ⭐ **Starring** the repository on GitHub to help others discover it.
+- 🍴 **Forking** and contributing new tools, fixes, or updates.
+- 📢 **Sharing** with your fellow developers, platform engineers, and team leads.
+- ☕ **Buying a coffee** to fuel ongoing curation and maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support is deeply appreciated and keeps open-source knowledge thriving! 🙌
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Collaborative-API-Development-Workspaces&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Collaborative-API-Development-Workspaces&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- 📌 This is a community-maintained list provided for informational purposes only.
+- 🔄 Pricing, quotas, and feature tiers change frequently; always check vendor websites directly for the latest updates.
+- 🔐 When evaluating collaborative API workspaces, audit data governance models (such as secret masking, end-to-end encryption, and role-based access control) to protect sensitive API keys and production credentials.
 
 ---
 

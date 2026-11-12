@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <linearGradient id="primaryText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="50%" stop-color="#a78bfa" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <linearGradient id="subTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(30, 41, 59, 0.7)" />
+      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.85)" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="lightGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(148, 163, 184, 0.05)" stroke-width="1" />
+    </pattern>
+
+    <style>
+      @keyframes pulseOrb {
+        0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.45; }
+        50% { transform: scale(1.25) translate(30px, -20px); opacity: 0.75; }
+      }
+      @keyframes pulseOrbAlt {
+        0%, 100% { transform: scale(1.1) translate(0, 0); opacity: 0.35; }
+        50% { transform: scale(0.9) translate(-25px, 25px); opacity: 0.65; }
+      }
+      @keyframes floatNode1 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes floatNode2 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(12px); }
+      }
+      @keyframes dashFlow {
+        to { stroke-dashoffset: -40; }
+      }
+      @keyframes beaconWave {
+        0% { r: 5; opacity: 1; }
+        100% { r: 24; opacity: 0; }
+      }
+      .orb-1 { animation: pulseOrb 9s ease-in-out infinite; transform-origin: 200px 100px; }
+      .orb-2 { animation: pulseOrbAlt 11s ease-in-out infinite; transform-origin: 1000px 300px; }
+      .flow-line { stroke-dasharray: 8, 8; animation: dashFlow 2.5s linear infinite; }
+      .node-float-1 { animation: floatNode1 5s ease-in-out infinite; }
+      .node-float-2 { animation: floatNode2 6s ease-in-out infinite; }
+      .beacon { animation: beaconWave 2.2s cubic-bezier(0, 0.2, 0.8, 1) infinite; }
+    </style>
+  </defs>
+
+  <!-- Deep Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="420" rx="16" fill="url(#grid)" />
+
+  <!-- Animated Ambient Nebula/Orbs in Background -->
+  <g filter="url(#glow)">
+    <circle class="orb-1" cx="220" cy="110" r="130" fill="#3b82f6" opacity="0.4" />
+    <circle class="orb-2" cx="980" cy="300" r="160" fill="#8b5cf6" opacity="0.35" />
+    <circle cx="600" cy="210" r="110" fill="#ec4899" opacity="0.2" />
+  </g>
+
+  <!-- Subtle Dynamic Network / Mesh in Background -->
+  <g opacity="0.6">
+    <path class="flow-line" d="M 120 180 Q 300 90, 520 160 T 1080 180" fill="none" stroke="#38bdf8" stroke-width="1.8" />
+    <path class="flow-line" d="M 120 280 Q 400 370, 680 270 T 1080 260" fill="none" stroke="#a855f7" stroke-width="1.8" />
+  </g>
+
+  <!-- Animated Background Workstation / Protocol Cards (Behind Forehead Content) -->
+  <g class="node-float-1" opacity="0.75">
+    <rect x="70" y="70" width="170" height="48" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="92" cy="94" r="5" fill="#38bdf8" />
+    <circle class="beacon" cx="92" cy="94" r="5" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="110" y="99" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">REST • GraphQL</text>
+  </g>
+
+  <g class="node-float-2" opacity="0.75">
+    <rect x="960" y="70" width="170" height="48" rx="8" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="1" />
+    <circle cx="982" cy="94" r="5" fill="#a855f7" />
+    <circle class="beacon" cx="982" cy="94" r="5" fill="none" stroke="#a855f7" stroke-width="1.5" />
+    <text x="1000" y="99" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Git Sync • RBAC</text>
+  </g>
+
+  <g class="node-float-2" opacity="0.75">
+    <rect x="80" y="315" width="175" height="48" rx="8" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1" />
+    <circle cx="102" cy="339" r="5" fill="#10b981" />
+    <text x="120" y="344" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">OpenAPI • AsyncAPI</text>
+  </g>
+
+  <g class="node-float-1" opacity="0.75">
+    <rect x="945" y="315" width="185" height="48" rx="8" fill="url(#cardGrad)" stroke="#ec4899" stroke-width="1" />
+    <circle cx="967" cy="339" r="5" fill="#ec4899" />
+    <text x="985" y="344" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Real-Time Workspaces</text>
+  </g>
+
+  <!-- High-Contrast Semi-Transparent Center Platter guaranteeing FOREGROUND READABILITY -->
+  <rect x="250" y="80" width="700" height="260" rx="16" fill="rgba(10, 15, 30, 0.88)" stroke="url(#borderGrad)" stroke-width="1.5" />
+
+  <!-- FOREGROUND TEXT (Always crisp, prominent, unobstructed) -->
+  <g text-anchor="middle">
+    <!-- Category Pill -->
+    <rect x="440" y="105" width="320" height="28" rx="14" fill="rgba(56, 189, 248, 0.12)" stroke="#38bdf8" stroke-width="1" />
+    <text x="600" y="124" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="2">CURATED DEVELOPER ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="600" y="180" fill="url(#primaryText)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+      Awesome Collaborative API
+    </text>
+    <text x="600" y="222" fill="url(#primaryText)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+      Development Workspaces
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="265" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="500">
+      Top SaaS Platforms &amp; Open-Source Projects for Real-Time API Teams
+    </text>
+
+    <!-- Interactive / Feature Badges in Foreground -->
+    <g transform="translate(600, 305)">
+      <g transform="translate(-240, 0)">
+        <rect x="-60" y="-14" width="120" height="26" rx="13" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="0" y="4" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">⚡ Real-Time Co-Edit</text>
+      </g>
+      <g transform="translate(-80, 0)">
+        <rect x="-55" y="-14" width="110" height="26" rx="13" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="0" y="4" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">🔒 Git-Backed</text>
+      </g>
+      <g transform="translate(75, 0)">
+        <rect x="-55" y="-14" width="110" height="26" rx="13" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="0" y="4" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">🌐 Cloud CDEs</text>
+      </g>
+      <g transform="translate(230, 0)">
+        <rect x="-55" y="-14" width="110" height="26" rx="13" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+        <text x="0" y="4" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">🛡️ Self-Hosted</text>
+      </g>
+    </g>
+  </g>
+</svg>
